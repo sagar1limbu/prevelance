@@ -71,6 +71,11 @@ public class LoginController {
 		return modelAndView;
 	}
 
+	@RequestMapping("/this")
+	public String thisvalue(){
+		return "thisvalue";
+	}
+
 	@RequestMapping(value="/admin/home", method = RequestMethod.GET)
 	public ModelAndView home(){
 		ModelAndView modelAndView = new ModelAndView();
